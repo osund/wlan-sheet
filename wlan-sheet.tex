@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{comment}
+\usepackage{qrcode}
+\pagenumbering{gobble}
+
+\usepackage[swedish, english]{babel}
+\babeltags{sv = swedish, en = english}
+
+\renewcommand{\textsv}[1]{}
+%\renewcommand{\texten}[1]{}
+
+\include{wlan-info}
+
+\title{\Huge{
+\texten{Login details for WiFi}
+\textsv{Inloggningsuppgifter för WiFi}
+}}
+
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\qrcode[height=3in]{WIFI:S:\ssid;T:WPA;P:\password;;}
+\\
+\vspace{.2in}
+\begin{itemize}
+
+\item\textbf{iOS:}
+\texten{From version 11 of iOS (planned to be released in the fall of 2017) you can scan login details for WiFi with the built-in camera app.}
+\textsv{Från version 11 av iOS (planeras släppas hösten 2017) kan man skanna inloggningsuppgifter för WiFi med den inbyggda kamera-appen.}
+
+\item\textbf{Android:}
+\texten{Use the app}
+\textsv{Använd appen}
+\emph{\href{https://play.google.com/store/apps/details?id=com.google.zxing.client.android}{Barcode Scanner}}
+\texten{from}
+\textsv{från}
+\emph{ZXing Team}
+\texten{available in}
+\textsv{som finns i}
+\emph{Play Store}
+\texten{and choose}
+\textsv{och välj}
+\emph{Connect to Network}
+\texten{after scanning the code.}
+\textsv{efter att koden skannats för att ansluta.}
+
+\item\textbf{\texten{Others}\textsv{Övriga}:}
+\texten{Use the login details below.}
+\textsv{Använd inloggningsuppgifterna nedan.}
+\end{itemize}
+\end{center}
+
+\begin{table}[H]
+\centering
+\huge
+\begin{tabular}{ll}
+\textbf{SSID:}                               & \ssid  \\
+\textbf{\texten{Password}\textsv{Lösenord}:} & \password
+\end{tabular}
+\end{table}
+
+\end{document}
+
