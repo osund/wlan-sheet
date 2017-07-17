@@ -18,7 +18,7 @@
 
 \title{\Huge{\faWifi\,
 \texten{WiFi Configuration}
-\textsv{Inloggningsuppgifter för WiFi}
+\textsv{WiFi-konfiguration}
 }}
 
 \date{}
@@ -28,7 +28,7 @@
 \maketitle
 
 \begin{center}
-\qrcode[height=3in]{WIFI:S:\ssid;T:WPA;P:\password;;}
+\qrcode[height=3in]{WIFI:S:\ssid;T:\type;P:\password;;}
 \\
 \vspace{.1in}
 
@@ -37,7 +37,7 @@
 
 \item\faApple\,\textbf{iOS:}
 \texten{From version 11 of iOS (planned to be released in the fall of 2017) you can scan QR WiFi configuration with the built-in camera app.}
-\textsv{Från version 11 av iOS (planeras släppas hösten 2017) kan man skanna inloggningsuppgifter för WiFi med den inbyggda kamera-appen.}
+\textsv{Från version 11 av iOS (planeras släppas hösten 2017) kan man skanna QR-koder som innehåller WiFi-konfiguration med den inbyggda kamera-appen.}
 \texten{To connect, tap on the \emph{Join ``\ssid '' Network} notification.}
 
 \item\faAndroid\,\textbf{Android:}
@@ -54,11 +54,11 @@
 \textsv{och välj}
 \emph{Connect to Network}
 \texten{after scanning the QR WiFi configuration.}
-\textsv{efter att koden skannats för att ansluta.}
+\textsv{efter att QR-koden med WiFi-konfigurationen skannats för att ansluta.}
 
 \item\faDesktop\,\textbf{\texten{Other}\textsv{Övriga}:}
 \texten{Use the WiFi configuration below.}
-\textsv{Använd inloggningsuppgifterna nedan.}
+\textsv{Använd WiFi-konfigurationen nedan.}
 
 \end{itemize}
 \end{large}
@@ -73,6 +73,8 @@
 \textbf{\texten{Security}\textsv{Säkerhet}:} & \type
 \end{tabular}
 \end{table}
+
+\include{router-webadmin}
 
 \end{document}
 
