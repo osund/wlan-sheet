@@ -10,7 +10,8 @@ Edit **wlan-info.tex** and change _foo_ and _bar_ to your SSID and password.
 
 ```
 
-Then run **make** to create a PDF called **wlan-sheet.pdf** using the provided WLAN info.
+Then run **make** to create a PDF called **wlan-sheet.pdf** using the provided WLAN configuration.
+Note that the configuration will assume that the authentication type is WPA. It is also possible to generate QR codes with WEP and no password. But why would you want to use this for a WLAN without a password and why would you want to use WEP?
 
 To change language to Swedish replace
 
