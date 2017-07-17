@@ -2,7 +2,7 @@
 Generate a PDF using LaTeX to share WiFi as a QR code and written text.
 
 ## Usage
-Edit **wlan-info.tex** and change _foo_ and _bar_ to your SSID and password.
+Edit **wlan-config.tex** and change _foo_ and _bar_ to your SSID and password.
 
 ```latex
 \newcommand{\ssid}{YOUR SSID}
