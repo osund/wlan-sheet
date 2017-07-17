@@ -30,11 +30,11 @@ with
 ## Screenshots of scanning
 ![Android](https://i.kinja-img.com/gawker-media/image/upload/s--lDBZPX-Y--/c_fit,fl_progressive,q_80,w_636/18hkrahwuw9gojpg.jpg)
 
-_Android_
+_Android using_ [Barcode Scanner](https://play.google.com/store/apps/details?id=com.google.zxing.client.android)
 
 ![iOS11](https://i.redd.it/seqr6svcbm2z.jpg)
 
-_iOS_
+_iOS 11_
 
 ## Links
 * [ZXing wiki about the syntax for the WiFi configuration](https://github.com/zxing/zxing/wiki/Barcode-Contents#wifi-network-config-android)
