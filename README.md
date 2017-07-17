@@ -30,3 +30,4 @@ with
 ## Links
 * [ZXing wiki about the syntax for the WiFi configuration](https://github.com/zxing/zxing/wiki/Barcode-Contents#wifi-network-config-android)
 * [Discovered to work in IOS 11 by reddit user EzDzO](https://www.reddit.com/r/iOSBeta/comments/6g88v6/feature_if_you_scan_the_qr_code_of_your_wifi_name/)
+* [LaTeX package for generating QR codes](https://www.ctan.org/pkg/qrcode)
