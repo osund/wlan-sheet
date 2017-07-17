@@ -16,15 +16,15 @@ Note that the configuration will assume that the authentication type is WPA. It 
 To change language to Swedish replace
 
 ```latex
-%\renewcommand{\textsv}[1]{}
-\renewcommand{\texten}[1]{}
+\renewcommand{\textsv}[1]{}
+%\renewcommand{\texten}[1]{}
 ```
 
 with
 
 ```latex
-\renewcommand{\textsv}[1]{}
-%\renewcommand{\texten}[1]{}
+%\renewcommand{\textsv}[1]{}
+\renewcommand{\texten}[1]{}
 ```
 
 ## Links
