@@ -13,7 +13,6 @@
 \renewcommand{\textsv}[1]{}
 %\renewcommand{\texten}[1]{}
 
-\newcommand{\type}{WPA}
 \include{wlan-config}
 
 \title{\Huge{\faWifi\,
@@ -28,7 +27,7 @@
 \maketitle
 
 \begin{center}
-\qrcode[height=3in]{WIFI:S:\ssid;T:\type;P:\password;;}
+\qrcode[height=3in]{WIFI:S:\ssid;T:\authtype;P:\password;;}
 \\
 \vspace{.1in}
 
@@ -70,7 +69,7 @@
 \begin{tabular}{ll}
 \textbf{SSID:}                               & \ssid     \\
 \textbf{\texten{Password}\textsv{Lösenord}:} & \password \\
-\textbf{\texten{Security}\textsv{Säkerhet}:} & \type
+\textbf{\texten{Security}\textsv{Säkerhet}:} & \authtype
 \end{tabular}
 \end{table}
 

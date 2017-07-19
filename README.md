@@ -1,7 +1,10 @@
 # WLAN Sheet
-Generate a PDF using LaTeX to share WiFi as a QR code and written text.
+Generate a PDF using LaTeX to share WiFi configuration as a QR code and written text.i
+The QR codes are supported by iOS 11 and the Android app [Barcode Scanner](https://play.google.com/store/apps/details?id=com.google.zxing.client.android) (also [available in F-Droid](https://f-droid.org/packages/com.google.zxing.client.android/)) by _ZXing Team_.
 
 ## Usage
+
+### WLAN Configuration
 Edit **wlan-config.tex** and change _foo_ and _bar_ to your SSID and password.
 
 ```latex
@@ -11,14 +14,14 @@ Edit **wlan-config.tex** and change _foo_ and _bar_ to your SSID and password.
 ```
 
 Then run **make** to create a PDF called **wlan-sheet.pdf** using the provided WLAN configuration.
-Note that the configuration will assume that the authentication type is WPA. It is also possible to generate QR codes with WEP and no password. But why would you want to use this for a WLAN without a password and why would you want to use WEP?
+It is also possible to generate QR codes with WEP and no password. But why would you want to use this for a WLAN without a password and why would you want to use WEP?
 
-If you really want to use WEP, add the following to **wlan-config.tex**.
+If you really want to use WEP, change to the following in **wlan-config.tex**.
 
 ```latex
-\renewcommand{\type}{WEP}
+\newcommand{\authtype}{WEP}
 ```
-
+### Language
 To change language to Swedish replace
 
 ```latex
