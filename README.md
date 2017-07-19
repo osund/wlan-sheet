@@ -1,5 +1,5 @@
 # WLAN Sheet
-Generate a PDF using LaTeX to share WiFi configuration as a QR code and written text.i
+Generate a PDF using LaTeX to share WiFi configuration as a QR code and written text.
 The QR codes are supported by iOS 11 and the Android app [Barcode Scanner](https://play.google.com/store/apps/details?id=com.google.zxing.client.android) (also [available in F-Droid](https://f-droid.org/packages/com.google.zxing.client.android/)) by _ZXing Team_.
 
 ## Usage
@@ -10,7 +10,6 @@ Edit **wlan-config.tex** and change _foo_ and _bar_ to your SSID and password.
 ```latex
 \newcommand{\ssid}{YOUR SSID}
 \newcommand{\password}{YOUR PASSWORD}
-
 ```
 
 Then run **make** to create a PDF called **wlan-sheet.pdf** using the provided WLAN configuration.
@@ -21,6 +20,16 @@ If you really want to use WEP, change to the following in **wlan-config.tex**.
 ```latex
 \newcommand{\authtype}{WEP}
 ```
+
+### Router Web Administration
+The second page has a QR code with the URL to the webadmin interface of the router and the login details in text format.
+
+```latex
+\newcommand{\webadminurl}{YOUR ROUTER URL}
+\newcommand{\webadminuser}{YOUR ROUTER USERNAME}
+\newcommand{\webadminpass}{YOUR ROUTER PASSWORD}
+```
+
 ### Language
 To change language to Swedish replace
 
