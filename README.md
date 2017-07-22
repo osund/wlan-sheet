@@ -34,15 +34,13 @@ The second page has a QR code with the URL to the webadmin interface of the rout
 To change language to Swedish replace
 
 ```latex
-\renewcommand{\textsv}[1]{}
-%\renewcommand{\texten}[1]{}
+\selectlanguage{english}
 ```
 
 with
 
 ```latex
-%\renewcommand{\textsv}[1]{}
-\renewcommand{\texten}[1]{}
+\selectlanguage{swedish}
 ```
 
 ## Screenshots of scanning

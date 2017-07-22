@@ -1,2 +1,2 @@
-$pdflatex = 'pdflatex -shell-escape';
+$pdflatex = 'pdflatex';
 $pdf_mode = 1;
