@@ -1,0 +1,7 @@
+\usepackage{translations}
+\usepackage[swedish, english]{babel}
+\babeltags{sv = swedish, en = english}
+
+\ifcurrentbaselanguage{English}{\include{languages/english}}{}
+\ifcurrentbaselanguage{Swedish}{\include{languages/swedish}}{}
+

@@ -5,15 +5,10 @@
 \usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \usepackage{qrcode}
-\usepackage{translations}
 \pagenumbering{gobble}
 
-\usepackage[swedish, english]{babel}
-\babeltags{sv = swedish, en = english}
-
-\include{wlan-config}
-
-\ifcurrentbaselanguage{English}{\include{languages/english}}{\include{languages/swedish}}
+\input{i18n}
+\input{wlan-config}
 
 \newcommand{\playurl}{https://play.google.com/store/apps/details?id=com.google.zxing.client.android}
 
@@ -29,16 +24,11 @@
 \qrcode[height=3in]{WIFI:S:\ssid;T:\authtype;P:\password;;}
 \\
 \vspace{.1in}
-
 \begin{large}
 \begin{itemize}
-
-\item\faApple\,\textbf{iOS:} \triosdescr
-
-\item\faAndroid\,\textbf{Android:} \trandroiddescr
-
-\item\faDesktop\,\textbf{\trother:} \trotherdescr
-
+    \item\faApple\,\textbf{iOS:} \triosdescr
+    \item\faAndroid\,\textbf{Android:} \trandroiddescr
+    \item\faDesktop\,\textbf{\trother:} \trotherdescr
 \end{itemize}
 \end{large}
 \end{center}
@@ -47,9 +37,9 @@
 \centering
 \huge
 \begin{tabular}{ll}
-\textbf{SSID:}        & \ssid     \\
-\textbf{\trpassword:} & \password \\
-\textbf{\trsecurity:} & \authtype
+    \textbf{SSID:}        & \ssid     \\
+    \textbf{\trpassword:} & \password \\
+    \textbf{\trsecurity:} & \authtype
 \end{tabular}
 \end{table}
 
