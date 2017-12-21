@@ -7,6 +7,8 @@
 \usepackage{qrcode}
 \pagenumbering{gobble}
 
+\newif\ifincludewebadmin
+
 \input{i18n}
 \input{wlan-config}
 \input{languages}
@@ -44,7 +46,9 @@
 \end{tabular}
 \end{table}
 
-\include{router-webadmin}
+\ifincludewebadmin
+    \include{router-webadmin}
+\fi
 
 \end{document}
 
