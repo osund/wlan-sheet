@@ -7,8 +7,13 @@
 \usepackage{qrcode}
 \pagenumbering{gobble}
 
+\newif\ifincludewebadmin
+\newif\ifincludeinstruction
+\newif\ifincludeauthtype
+
 \input{i18n}
 \input{wlan-config}
+\input{languages}
 
 \newcommand{\playurl}{https://play.google.com/store/apps/details?id=com.google.zxing.client.android}
 
@@ -22,6 +27,7 @@
 
 \begin{center}
 \qrcode[height=3in]{WIFI:S:\ssid;T:\authtype;P:\password;;}
+\ifincludeinstruction
 \\
 \vspace{.1in}
 \begin{large}
@@ -31,6 +37,7 @@
     \item\faDesktop\,\textbf{\trother:} \trotherdescr
 \end{itemize}
 \end{large}
+\fi
 \end{center}
 
 \begin{table}[H]
@@ -39,11 +46,15 @@
 \begin{tabular}{ll}
     \textbf{SSID:}        & \ssid     \\
     \textbf{\trpassword:} & \password \\
-    \textbf{\trsecurity:} & \authtype
+    \ifincludeauthtype
+        \textbf{\trsecurity:} & \authtype
+    \fi
 \end{tabular}
 \end{table}
 
-\include{router-webadmin}
+\ifincludewebadmin
+    \include{router-webadmin}
+\fi
 
 \end{document}
 
