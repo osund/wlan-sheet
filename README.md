@@ -43,6 +43,8 @@ with
 \selectlanguage{swedish}
 ```
 
+or use the same pattern for changing to German or Polish.
+
 ## Screenshots of scanning
 ![Android](https://i.kinja-img.com/gawker-media/image/upload/s--lDBZPX-Y--/c_fit,fl_progressive,q_80,w_636/18hkrahwuw9gojpg.jpg)
 
@@ -50,7 +52,7 @@ _Android using_ [Barcode Scanner](https://play.google.com/store/apps/details?id=
 
 ![iOS11](https://i.redd.it/seqr6svcbm2z.jpg)
 
-_iOS 11_
+_iOS 11_ (yes, the blurred password can be found out by scanning the QR code...)
 
 ## Links
 * [ZXing wiki about the syntax for the WiFi configuration](https://github.com/zxing/zxing/wiki/Barcode-Contents#wifi-network-config-android)
