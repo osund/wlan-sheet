@@ -56,8 +56,8 @@ _iOS 11_ (yes, the blurred password can be found out by scanning the QR code...)
 
 ## Translations
 
-* German by @burghardt
-* Polish by @klada
+* German by [@klada](https://github.com/klada)
+* Polish by [@burghardt](https://github.com/burghardt)
 
 ## Links
 * [ZXing wiki about the syntax for the WiFi configuration](https://github.com/zxing/zxing/wiki/Barcode-Contents#wifi-network-config-android)
