@@ -43,7 +43,7 @@ with
 \selectlanguage{swedish}
 ```
 
-or use the same pattern for changing to German or Polish.
+or use the same pattern for changing to German, Polish or Czech.
 
 ## Screenshots of scanning
 ![Android](https://i.kinja-img.com/gawker-media/image/upload/s--lDBZPX-Y--/c_fit,fl_progressive,q_80,w_636/18hkrahwuw9gojpg.jpg)
@@ -58,6 +58,7 @@ _iOS 11_ (yes, the blurred password can be found out by scanning the QR code...)
 
 * German by [@klada](https://github.com/klada)
 * Polish by [@burghardt](https://github.com/burghardt)
+* Czech by [@renekliment](https://github.com/renekliment)
 
 ## Links
 * [ZXing wiki about the syntax for the WiFi configuration](https://github.com/zxing/zxing/wiki/Barcode-Contents#wifi-network-config-android)
